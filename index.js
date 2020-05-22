@@ -9,10 +9,19 @@ const setOption = (program, option) => {
 } 
 
 const resolveOption = (program, options) => {
+
+    // Get a option
     const result = Object.keys(options).map(({ command, resolve }, index) => {
         const fn = Object.keys(program).includes(command)
         return fn && resolve
     })
+
+
+    // If exists validators, resolve validators
+
+
+    // Call Resolve Function and Waiting to resolve
+
 
     console.log(result)
 }
